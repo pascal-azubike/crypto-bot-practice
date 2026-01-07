@@ -34,6 +34,7 @@ for name, rpc in networks.items():
         tx_count = w3.eth.get_transaction_count(wallet_input)
 
         print(f"✅ {name:20}")
+        print(f" Balance Wei: {balance_wei}")
         print(f"   Balance: {balance_eth:>10.4f} ETH")
         print(f"   Transactions: {tx_count}\n")
 
